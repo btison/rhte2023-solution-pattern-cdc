@@ -56,7 +56,7 @@ Create the name of the service account to use
 */}}
 {{- define "retail-db.serviceAccountName" -}}
 {{- if .Values.serviceAccount.create }}
-{{- default (include "retail-db.fullname" .) .Values.serviceAccount.name }}
+{{- default (include "retail-db.name" .) .Values.serviceAccount.name }}
 {{- else }}
 {{- default "default" .Values.serviceAccount.name }}
 {{- end }}
