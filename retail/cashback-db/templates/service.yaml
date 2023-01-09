@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    {{- include "cashback-db.labels" . | nindent 4 }}
+  name: {{ include "cashback-db.fullname" . }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - name: postgres
+      protocol: TCP
+      port: {{ .Values.service.port }}
+      targetPort: postgres
+  selector:
+    {{- include "cashback-db.selectorLabels" . | nindent 4 }}
