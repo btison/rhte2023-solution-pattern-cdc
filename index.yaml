@@ -11,6 +11,17 @@ entries:
     urls:
     - https://btison.github.io/rhte2023-solution-pattern-cdc-helm/charts/debezium-0.1.0.tgz
     version: 0.1.0
+  kafdrop:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2023-01-09T18:47:53.458200613+01:00"
+    description: A Helm chart for Kafdrop
+    digest: e959db646b5ad08f512815a1a80ad7d036701850bb7b4fc566d47129f184f57e
+    name: kafdrop
+    type: application
+    urls:
+    - https://btison.github.io/rhte2023-solution-pattern-cdc-helm/charts/kafdrop-0.1.0.tgz
+    version: 0.1.0
   kafka-broker:
   - apiVersion: v2
     appVersion: 1.0.0
@@ -44,4 +55,4 @@ entries:
     urls:
     - https://btison.github.io/rhte2023-solution-pattern-cdc-helm/charts/retail-db-0.1.0.tgz
     version: 0.1.0
-generated: "2023-01-09T18:29:49.445602652+01:00"
+generated: "2023-01-09T18:47:53.457497976+01:00"
