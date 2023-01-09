@@ -74,7 +74,7 @@ route:
     insecureEdgeTerminationPolicy: Redirect
 
 kafka:
-  bootstrapServer: kafka-cluster-kafka-bootstrap:9092
+  bootstrapServer: kafka-kafka-bootstrap:9092
   securityProtocol: ""
   saslMechanism: ""
   userId: ""

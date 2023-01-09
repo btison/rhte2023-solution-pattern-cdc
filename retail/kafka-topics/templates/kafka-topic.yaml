@@ -3,7 +3,7 @@
 apiVersion: kafka.strimzi.io/v1beta2
 kind: KafkaTopic
 metadata:
-  name: {{ .name }}
+  name: {{ .name | replace "_" "-" }}
   labels:
     strimzi.io/cluster: {{ $.Values.kafka.cluster }}
     {{- include "kafka-topics.labels" $ | nindent 4 }}    
@@ -13,4 +13,5 @@ spec:
   config:
     retention.ms: {{ .retention }}
     segment.bytes: 1073741824
+  topicName: {{ .name }}
 {{- end }} 

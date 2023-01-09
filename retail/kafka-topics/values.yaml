@@ -7,7 +7,7 @@ kafka:
       partitions: 1
       replicas: 2
       retention: -1
-    - name: retail.updates.public.customer
+    - name: retail.updates.public.product
       partitions: 1
       replicas: 2
       retention: -1
