@@ -11,6 +11,17 @@ entries:
     urls:
     - https://btison.github.io/rhte2023-solution-pattern-cdc-helm/charts/kafka-broker-0.1.0.tgz
     version: 0.1.0
+  kafka-connect:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2023-01-09T18:12:13.788904886+01:00"
+    description: A Helm chart for Kafka Connect
+    digest: 6d4a117076eb0d8122b9a4286bb191b82b18db7e2bb2e22ad703c169cc14a54b
+    name: kafka-connect
+    type: application
+    urls:
+    - https://btison.github.io/rhte2023-solution-pattern-cdc-helm/charts/kafka-connect-0.1.0.tgz
+    version: 0.1.0
   retail-db:
   - apiVersion: v2
     appVersion: 1.0.0
@@ -22,4 +33,4 @@ entries:
     urls:
     - https://btison.github.io/rhte2023-solution-pattern-cdc-helm/charts/retail-db-0.1.0.tgz
     version: 0.1.0
-generated: "2023-01-09T17:41:18.216911604+01:00"
+generated: "2023-01-09T18:12:13.788258499+01:00"
