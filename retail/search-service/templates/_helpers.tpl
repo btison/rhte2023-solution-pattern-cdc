@@ -61,14 +61,3 @@ Create the name of the service account to use
 {{- default "default" .Values.serviceAccount.name }}
 {{- end }}
 {{- end }}
-
-{{/*
-Find the name of the elasticsearch default user password
-*/}}
-{{- define "elasticsearch.password" -}}
-{{- $userSecret := printf "%s-%s" .Values.elasticsearch.clusterName "es-elastic-user" }}
-{{- $secretObj := (lookup "v1" "Secret" .Release.Namespace $userSecret) | default dict }}
-{{- $secretData := (get $secretObj "data") | default dict }}
-{{- $userPassword := (get $secretData "elastic" | b64dec) }}
-{{- printf "%s" $userPassword }}
-{{- end }}

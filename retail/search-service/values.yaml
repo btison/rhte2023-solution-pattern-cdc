@@ -54,6 +54,7 @@ route:
 elasticsearch:
   hosts: retail-es-http:9200
   clusterName: retail
-  username: elastic
+  username: cashback
+  password: cashback
   protocol: http
   index: products
