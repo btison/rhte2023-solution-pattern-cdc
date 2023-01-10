@@ -5,7 +5,7 @@ replicaCount: 1
 image: 
   repository: quay.io/solution-pattern-cdc/sales-streams
   imagePullPolicy: IfNotPresent
-  tag: "3922064"
+  tag: "facb2c4"
 
 serviceAccount:
   create: true
