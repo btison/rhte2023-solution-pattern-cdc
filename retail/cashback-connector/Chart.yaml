@@ -1,6 +1,6 @@
 apiVersion: v2
-name: globex
-description: A Helm chart for Kubernetes
+name: cashback-connector
+description: A Helm chart for the kafka-to-cashbackdb connector 
 
 # A chart can be either an 'application' or a 'library' chart.
 #
@@ -22,35 +22,3 @@ version: 0.1.0
 # follow Semantic Versioning. They should reflect the version the application is using.
 # It is recommended to use it with quotes.
 appVersion: "1.0.0"
-
-dependencies:
-  - name: retail-db
-    version: 0.1.0
-    repository: file://retail-db
-  - name: kafka-broker
-    version: 0.1.0
-    repository: file://kafka-broker
-  - name: kafka-connect
-    version: 0.1.0
-    repository: file://kafka-connect
-  - name: kafka-topics
-    version: 0.1.0
-    repository: file://kafka-topics
-  - name: debezium
-    version: 0.1.0
-    repository: file://debezium
-  - name: kafdrop
-    version: 0.1.0
-    repository: file://kafdrop
-  - name: cashback-db
-    version: 0.1.0
-    repository: file://cashback-db
-  - name: elasticsearch
-    version: 0.1.0
-    repository: file://elasticsearch
-  - name: sales-streams
-    version: 0.1.0
-    repository: file://sales-streams
-  - name: cashback-connector
-    version: 0.1.0
-    repository: file://cashback-connector
