@@ -48,6 +48,7 @@ dependencies:
   - name: elasticsearch
     version: 0.1.0
     repository: file://elasticsearch
+    condition: elasticsearch.enabled
   - name: sales-streams
     version: 0.1.0
     repository: file://sales-streams
@@ -63,6 +64,8 @@ dependencies:
   - name: elastic-connector
     version: 0.1.0
     repository: file://elastic-connector
+    condition: elasticsearch.enabled
   - name: search-service
     version: 0.1.0
     repository: file://search-service
+    condition: elasticsearch.enabled
