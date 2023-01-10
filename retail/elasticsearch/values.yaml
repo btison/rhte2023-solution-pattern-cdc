@@ -1,7 +1,9 @@
 clusterName: retail
 version: 7.17.2
 
-auth: {}
+auth:
+  fileRealm:
+    - secretName: elastic-user-secret
 
 http:
   service: {}
