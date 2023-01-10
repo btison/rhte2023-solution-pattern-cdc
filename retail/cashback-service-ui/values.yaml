@@ -5,7 +5,7 @@ replicaCount: 1
 image: 
   repository: quay.io/solution-pattern-cdc/cashback-service-ui
   imagePullPolicy: IfNotPresent
-  tag: "dfc6654"
+  tag: "ebe8ca9"
 
 serviceAccount:
   create: true
