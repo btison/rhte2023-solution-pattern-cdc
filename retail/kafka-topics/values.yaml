@@ -23,3 +23,7 @@ kafka:
       partitions: 1
       replicas: 2
       retention: -1
+    - name: retail.sale-aggregated
+      partitions: 1
+      replicas: 2
+      retention: -1
