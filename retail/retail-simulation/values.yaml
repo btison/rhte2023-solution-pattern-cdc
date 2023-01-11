@@ -5,7 +5,7 @@ replicaCount: 1
 image: 
   repository: quay.io/solution-pattern-cdc/retail-simulation
   imagePullPolicy: IfNotPresent
-  tag: "50d86ed"
+  tag: "4f934be"
 
 serviceAccount:
   create: true
