@@ -70,3 +70,6 @@ dependencies:
     version: 0.1.0
     repository: file://search-service
     condition: elasticsearch.enabled
+  - name: retail-simulation
+    version: 0.1.0
+    repository: file://retail-simulation
