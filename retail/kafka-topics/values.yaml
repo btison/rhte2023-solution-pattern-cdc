@@ -27,3 +27,7 @@ kafka:
       partitions: 1
       replicas: 2
       retention: -1
+
+argocd:
+  enabled: true
+  syncwave: "-2"

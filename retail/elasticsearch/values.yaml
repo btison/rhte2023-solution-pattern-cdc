@@ -42,3 +42,7 @@ index:
 
 configJob:
   name: es-config-job
+
+argocd:
+  enabled: true
+  syncwave: "-2"

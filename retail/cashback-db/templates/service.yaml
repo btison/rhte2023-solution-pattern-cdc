@@ -4,6 +4,8 @@ metadata:
   labels:
     {{- include "cashback-db.labels" . | nindent 4 }}
   name: {{ include "cashback-db.fullname" . }}
+  annotations:
+    {{- include "cashback-db.argocd-syncwave" . | nindent 4 }}
 spec:
   type: {{ .Values.service.type }}
   ports:

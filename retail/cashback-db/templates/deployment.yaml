@@ -6,6 +6,8 @@ metadata:
     {{- include "cashback-db.labels" . | nindent 4 }}
     app.openshift.io/runtime: postgresql    
   name: {{ include "cashback-db.fullname" . }}
+  annotations:
+    {{- include "cashback-db.argocd-syncwave" . | nindent 4 }}
 spec:
   replicas: {{ .Values.replicaCount }}
   selector:

@@ -4,6 +4,8 @@ metadata:
   name: {{ include "kafka-broker.name" . }}
   labels:
     {{- include "kafka-broker.labels" . | nindent 4 }}
+  annotations:
+    {{- include "kafka-broker.argocd-syncwave" . | nindent 4 }}
 spec:
   kafka:
     replicas: {{ .Values.kafka.cluster.replicas }}

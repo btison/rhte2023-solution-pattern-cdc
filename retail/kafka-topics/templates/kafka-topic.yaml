@@ -6,7 +6,9 @@ metadata:
   name: {{ .name | replace "_" "-" }}
   labels:
     strimzi.io/cluster: {{ $.Values.kafka.cluster }}
-    {{- include "kafka-topics.labels" $ | nindent 4 }}    
+    {{- include "kafka-topics.labels" $ | nindent 4 }}
+  annotations:
+    {{- include "kafka-topics.argocd-syncwave" $ | nindent 4 }}
 spec:
   partitions: {{ .partitions }}
   replicas: {{ .replicas }}

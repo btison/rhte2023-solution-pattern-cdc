@@ -1,4 +1,23 @@
 ---
+argocd: &argo
+  enabled: true
 
 elasticsearch:
   enabled: true
+  argocd: *argo
+
+cashback-db:
+  argocd: *argo
+
+kafka-broker:
+  argocd: *argo
+
+kafka-connect:
+  argocd: *argo
+
+kafka-topics:
+  argocd: *argo
+
+retail-db:
+  argocd: *argo
+

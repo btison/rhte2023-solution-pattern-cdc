@@ -14,3 +14,7 @@ kafka:
     transactionStateLogMinIsr: 2
     minInsyncReplicas: 1
     interBrokerProtocolVersion: '3.2' 
+
+argocd:
+  enabled: true
+  syncwave: "-2"

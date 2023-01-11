@@ -70,3 +70,18 @@ Find the name of the OpenShift domain
 {{- $ocpDomain := (get $status "domain") | default dict }}
 {{- printf "%s" $ocpDomain }}
 {{- end }}
+
+{/*
+ArgoCD Syncwave
+*/}}
+{{- define "kafka-topics.argocd-syncwave" -}}
+{{- if .Values.argocd }}
+{{- if and (.Values.argocd.syncwave) (.Values.argocd.enabled) -}}
+argocd.argoproj.io/sync-wave: "{{ .Values.argocd.syncwave }}"
+{{- else }}
+{{- "{}" }}
+{{- end }}
+{{- else }}
+{{- "{}" }}
+{{- end }}
+{{- end }}

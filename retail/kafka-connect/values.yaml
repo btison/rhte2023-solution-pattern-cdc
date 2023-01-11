@@ -28,3 +28,7 @@ build:
         - type: tgz
           url: https://repo1.maven.org/maven2/io/debezium/debezium-connector-postgres/1.9.7.Final/debezium-connector-postgres-1.9.7.Final-plugin.tar.gz
           sha512sum: 088a92a7456101d7f01e356250439728e2018355d11797f20b8520d58ba6ce4400f917263223386b031c000d21010e1387970707bd7e8f92a681ac3c88ccc38b
+
+argocd:
+  enabled: true
+  syncwave: "-1"

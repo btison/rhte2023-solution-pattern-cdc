@@ -52,3 +52,7 @@ pgsql:
 persistence:
   mode: persistent
   capacity: 5Gi
+
+argocd:
+  enabled: true
+  syncwave: "-2"
