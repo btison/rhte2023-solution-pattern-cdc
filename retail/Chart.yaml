@@ -39,6 +39,7 @@ dependencies:
   - name: debezium
     version: 0.1.0
     repository: file://debezium
+    condition: debezium.enabled
   - name: kafdrop
     version: 0.1.0
     repository: file://kafdrop

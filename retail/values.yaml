@@ -21,3 +21,6 @@ kafka-topics:
 retail-db:
   argocd: *argo
 
+debezium:
+  enabled: true
+
