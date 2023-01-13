@@ -11,7 +11,7 @@ metadata:
     {{- include "kafka-topics.argocd-syncwave" $ | nindent 4 }}
 spec:
   partitions: {{ .partitions }}
-  replicas: {{ .replicas }}
+  replicas: {{ $.Values.kafka.replicationFactor }}
   config:
     retention.ms: {{ .retention }}
     segment.bytes: 1073741824
